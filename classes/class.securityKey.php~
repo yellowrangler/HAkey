@@ -1,0 +1,136 @@
+<?php
+
+class securityKey
+{
+    //-------------------------------------------------------------
+    // Private 
+    //------------------------------------------------------------- 
+    private $UserName ;
+    private $UserID;
+    private $Password;
+    
+   
+    private $Authorizations;
+    private $sessionKey;
+    
+
+      
+    private function setUserName($UserName)
+    {
+        $this->UserName = $UserName;
+    }
+    
+    private function setUserID($UserID)
+    {
+        $this->UserID = $UserID;
+    }
+    
+    private function setPassword($Password)
+    {
+        $this->Password = $Password;
+    }
+    
+    private function setAuthorizations($Authorizations)
+    {
+        $this->Authorizations = $Authorizations;
+    }
+    
+    private function setsessionKey()
+    {
+        $this->sessionKey =  new SessionsSecurity();
+    }
+   
+    private function SavesessionKey($dataArray)
+    {
+        $this->sessionKey->saveSessionData($dataArray);    
+    }
+
+    //-------------------------------------------------------------
+    // Protected 
+    //-------------------------------------------------------------
+
+
+    
+    //-------------------------------------------------------------
+    // Public 
+    //-------------------------------------------------------------
+    
+    // Constructor    
+    public function __construct ($UserName, $UserID, $Password, $Authorizations)
+    {
+        
+        $this->setsessionKey();
+        
+        $sk = $this->GetsessionKey();
+        
+        $result = $sk->getSessionData();
+        
+        if (($result == NULL) || (empty($result)) )
+        {
+            $this->setUserName(NULL);
+            $this->setUserID(NULL);
+            $this->setPassword(NULL); 
+            $this->setAuthorizations(NULL);
+        }
+        else
+        {
+            $this->setUserName(array_shift($result));
+            $this->setUserID(array_shift($result));
+            $this->setPassword(array_shift($result)); 
+            $this->setAuthorizations($result);
+            
+        }
+    }
+    
+    public function BuildKey ($UserName, $UserID, $Password, $Authorizations)
+    {
+        $this->setUserName($UserName);
+        $this->setUserID($UserID);
+        $this->setPassword($Password);     
+        $this->setAuthorizations($Authorizations);
+        
+        $dataArray [0] = $UserName;
+        $dataArray [1] = $UserID;
+        $dataArray [2] = $Password;
+        
+        $k = 3;
+        for ($i = 0; $i < count($Authorizations); $i++)
+        {
+            $dataArray [$k++] = $Authorizations[$i];        
+        }
+        
+        $this->SavesessionKey($dataArray);
+    }
+    
+    public function IsUserLoggedIn()
+    {
+        $result = $this->setUserName->getSessionData();
+        if ( ($result == NULL) || empty($result) )
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+    
+    public function GetUserName()
+    {
+         return $this->UserName;
+    }
+
+    public function GetAuthorizations()
+    {
+         return $this->Authorizations;
+    }    
+    
+    public function GetsessionKey()
+    {
+         return $this->sessionKey;
+    }
+
+}
+
+?>
+
