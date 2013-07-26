@@ -74,6 +74,12 @@ class DBinit
                 $this->DBuser = "root";
                 $this->DBpassword = "tarryc";
                 break;
+
+            case "ipHome":
+                $this->DBhost = "192.168.1.68";
+                $this->DBuser = "root";
+                $this->DBpassword = "tarryc";
+                break;    
                 
             case "iPage";
                 //----------------------------------------------------------------------------------------------------------

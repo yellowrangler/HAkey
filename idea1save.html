@@ -1,0 +1,155 @@
+<html>
+<head>
+<?php include ('include/head_idea1.php'); ?>
+</head>
+<body>
+<script type="text/javascript" >
+$(document).ready(function() {
+    
+    $("#chooseSelectFirst").click(function() {
+        $(".chooseSecondList").css('display', 'none');
+        $("#firstSelection").css('display', 'none');
+        $("#secondSelection").css('display', 'none');
+
+        $(".chooseFirstList").slideToggle('slow', function() {
+            $(".chooseFirstList .selectButtons").click(function() {
+                processSelectFirst(this);
+            });
+        });
+    });
+
+});
+
+function processSelectFirst(elm)
+{
+    var title = $(elm).text();
+
+    $("#firstSelection").text(title);
+    $("#firstSelection").css('display','inline');
+
+    $("#firstSelection").click(function() {
+        $(".chooseSecondList").css('display', 'none');
+        $("#secondSelection").css('display', 'none');
+
+        $(".chooseSecondList").slideDown('slow', function() {
+            $(".chooseSecondList .selectButtons").click(function() {
+                processSelectSecond(this);
+            });
+        });
+    });
+
+    $(".chooseFirstList").slideUp('slow', function() {
+        //
+    });
+}
+
+function processSelectSecond(elm)
+{
+    var title = $(elm).text();
+
+    $("#secondSelection").text(title);
+    $("#secondSelection").css('display','inline');
+
+    $(".chooseSecondList").slideUp('slow', function() {
+        //complete
+    });
+}
+</script>
+
+<div class="container">
+    
+<div class="banner">
+<div style="float:left;padding-left:60px;">
+<span style="font-weight:800;font-family:'OFL Sorts Mill Goudy TT', georgia, times, serif;font-size:15px;">
+Medical Diagnostic Events-Lab Tests
+</span>
+</div> <!-- end of left -->
+<div style="float:right;padding-right:10px;">
+<button class="LargeButtons"  id="logout" type="button">Logout</button>
+<button class="LargeButtons"  id="printsetup" type="button">Print Setup</button>
+<button class="LargeButtons"  id="printme" type="button">Print</button>
+</div> <!-- end of right -->
+</div> <!-- end of banner -->
+
+<div class="identification">
+
+<div style="float:left;background-color:white;padding:5px;width:20%;">
+<center>
+<input style="width:100%;" id="fullname" type="text" placeholder="Patient Full name" >
+<span class="inputTitle">Patients Full Name</span>
+</center>
+</div> <!-- end of block -->
+
+<div style="float:left;background-color:white;width:18%;padding:5px;">
+<center>
+<input style="width:100%;" id="maidenname" type="text" placeholder="Maiden Name" >
+<span class="inputTitle">Maiden Name</span>
+</div> <!-- end of block -->
+</center>
+
+<div style="float:left;background-color:white;padding:5px;width:18%;">
+<center>
+<input style="width:100%;" id="dob" type="text" placeholder="Date of Birth" >
+<span class="inputTitle">Date of Birth</span>
+</center>
+</div> <!-- end of block -->
+
+<div style="float:left;background-color:white;padding:5px;width:8%;">
+<center>
+<input style="width:100%;" id="age" type="text" placeholder="Age" >
+<span class="inputTitle">Age</span>
+</center>
+</div> <!-- end of block -->
+
+<div style="float:left;background-color:white;padding:5px;width:11%;">
+<center>
+<input style="width:100%;" id="gender" type="text" placeholder="Gender" >
+<span class="inputTitle">Gender</span>
+</center>
+</div> <!-- end of block -->
+
+<div style="float:left;background-color:white;padding:5px;width:11%;">
+<center>
+<input style="width:100%;" id="bloodtype" type="text" placeholder="Blood Type" >
+<span class="inputTitle">Blood Type</span>
+</center>
+</div> <!-- end of block -->
+
+</div> <!-- end of identification -->
+
+<div class="chooseFirst" >
+<button style="float:left;" id="chooseSelectFirst" class="LargeButtons" type="button">Choose Information</button>
+<button style="float:left;display:none;" id="firstSelection" class="LargeButtons" type="button"></button>
+<button style="float:left;display:none;" id="secondSelection" class="LargeButtons" type="button"></button>
+</div> <!-- end of chooseFirst -->  
+
+<div class="chooseFirstList" >
+<button id="emergencyInfo" class="selectButtons" type="button">Emergency Info</button>
+<button id="medicalInfo" class="selectButtons" type="button">Medical Info</button>
+<button id="medicalSummary" class="selectButtons" type="button">Medical Sumary</button>
+<button id="SchedulesAlerts" class="selectButtons" type="button">Schedules & Alerts</button>
+<button id="healthJournal" class="selectButtons" type="button">Health Journel</button>
+<button id="personalInfo" class="selectButtons" type="button">Personal Info</button>
+</div> <!-- end of chooseFirstList -->  
+
+<div class="chooseSecondList" >
+<button id="aa" class="selectButtons" type="button">aa Info</button>
+<button id="bb" class="selectButtons" type="button">ss Info</button>
+<button id="nn" class="selectButtons" type="button">dd Sumary</button>
+<button id="mm" class="selectButtons" type="button">ff and Alerts</button>
+<button id="mmn" class="selectButtons" type="button">gg Journel</button>
+<button id="rr" class="selectButtons" type="button">hh Info</button>
+</div> <!-- end of chooseSecondList --> 
+
+
+<div class="mainDisplay" >
+This is the Main display area
+</div> <!-- end of mainDisplay -->  
+
+
+
+</div> <!-- end of section-panel -->
+
+</div> <!-- end of container -->
+</body>
+</html>

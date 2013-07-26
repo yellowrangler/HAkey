@@ -1,2 +1,82 @@
 2013-03-25 13:43:53 : SQL error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'asc LIMIT 0, 5' at line 1 - Error doing select for data
 2013-03-25 13:43:53 : SQL: SELECT ID AS id, TestName,Orders,OrderDate,Results,ResultDate,Reports,ReportDate FROM hatesttbl ORDER BY Orders asc asc LIMIT 0, 5
+2013-05-08 21:04:12 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-08 21:04:12 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-08 21:04:12 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-08 21:04:12 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-08 21:04:12 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-08 21:04:12 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-08 21:04:12 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-08 21:04:12 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-08 21:05:37 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-08 21:05:37 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-08 21:05:37 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-08 21:05:37 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-08 21:05:37 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-08 21:05:37 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-08 21:05:37 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-08 21:05:37 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-08 21:14:23 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-08 21:14:23 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-08 21:14:23 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-08 21:14:23 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-08 21:14:23 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-08 21:14:23 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-08 21:14:23 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-08 21:14:23 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-08 21:17:00 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-08 21:17:00 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-08 21:17:00 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-08 21:17:00 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-08 21:17:01 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-08 21:17:01 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-08 21:17:01 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-08 21:17:01 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-10 00:52:52 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-10 00:52:52 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-10 00:52:52 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-10 00:52:52 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-10 00:52:54 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-10 00:52:54 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-10 00:52:54 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-10 00:52:54 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-10 00:53:55 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-10 00:53:55 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-10 00:53:55 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-10 00:53:55 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-10 00:53:55 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-10 00:53:55 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-10 00:53:55 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-10 00:53:55 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-10 01:09:52 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-10 01:09:52 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-10 01:09:52 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-10 01:09:52 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-10 01:09:52 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-10 01:09:52 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-10 01:09:52 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-10 01:09:52 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-10 01:12:26 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-10 01:12:26 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-10 01:12:26 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-10 01:12:26 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-10 01:12:26 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_connect to hadb
+2013-05-10 01:12:26 : DB error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing mysql_select_db to hadb
+2013-05-10 01:12:26 : SQL error: Can't connect to MySQL server on 'turksandcaicos' (4) - Error doing select for count
+2013-05-10 01:12:26 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-31 13:48:45 : DB error: Can't connect to MySQL server on '192.168.1.68' (113) - Error doing mysql_connect to hadb
+2013-05-31 13:48:45 : DB error: Can't connect to MySQL server on '192.168.1.68' (113) - Error doing mysql_select_db to hadb
+2013-05-31 13:48:45 : SQL error: Can't connect to MySQL server on '192.168.1.68' (113) - Error doing select for count
+2013-05-31 13:48:45 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-31 13:48:45 : DB error: Can't connect to MySQL server on '192.168.1.68' (113) - Error doing mysql_connect to hadb
+2013-05-31 13:48:45 : DB error: Can't connect to MySQL server on '192.168.1.68' (113) - Error doing mysql_select_db to hadb
+2013-05-31 13:48:45 : SQL error: Can't connect to MySQL server on '192.168.1.68' (113) - Error doing select for count
+2013-05-31 13:48:45 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-31 13:49:19 : DB error: Can't connect to MySQL server on '192.168.1.68' (113) - Error doing mysql_connect to hadb
+2013-05-31 13:49:19 : DB error: Can't connect to MySQL server on '192.168.1.68' (113) - Error doing mysql_select_db to hadb
+2013-05-31 13:49:19 : SQL error: Can't connect to MySQL server on '192.168.1.68' (113) - Error doing select for count
+2013-05-31 13:49:19 : SQL: SELECT COUNT(*) AS count from hatesttbl
+2013-05-31 13:49:19 : DB error: Can't connect to MySQL server on '192.168.1.68' (113) - Error doing mysql_connect to hadb
+2013-05-31 13:49:19 : DB error: Can't connect to MySQL server on '192.168.1.68' (113) - Error doing mysql_select_db to hadb
+2013-05-31 13:49:19 : SQL error: Can't connect to MySQL server on '192.168.1.68' (113) - Error doing select for count
+2013-05-31 13:49:19 : SQL: SELECT COUNT(*) AS count from hatesttbl

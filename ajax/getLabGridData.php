@@ -1,5 +1,6 @@
 <?php
-$HOMElocation = "Home";
+$HOMElocation = "ipHome";
+// $HOMElocation = "Home";
 // $HOMElocation = "iPage";
 
 include ('../classes/class.Log.php');
@@ -65,6 +66,9 @@ if (!$sql_result = mysql_query($sql, $hadb->DBconn))
 $responce->page = $page;
 $responce->total = $total_pages;
 $responce->records = $count;
+
+// print_r($responce);
+// exit;
 $i=0;
 while($row = mysql_fetch_array($sql_result,MYSQL_ASSOC)) 
 {
